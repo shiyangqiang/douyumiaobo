@@ -21,6 +21,7 @@ function daka(){
 	if(chat_line_list_Last == "您的发言速度过快...."){
 		window.clearInterval(miaoboInter);
 		miaoboInter = "";
+		console.log(chat_line_list_Last);
 		return false;
 	}
 	var curTime = new Date();
