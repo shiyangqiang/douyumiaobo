@@ -4,7 +4,7 @@ var chart_content = $('#chart_content');
 function checktime(){
     var curTime = new Date();
 	curMin = curTime.getMinutes();
-	if(curMin == 29 || curMin == 59){
+	if((curMin >= 29 && curMin < 31)|| (curMin >= 59) || (curMin >= 0 && curMin < 1)){
 		if(!miaoboInter){
 			miaoboInter = self.setInterval("daka()",3000);
 		}
